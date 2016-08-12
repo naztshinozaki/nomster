@@ -89,6 +89,7 @@ production:
   database: nomster_production
   username: nomster
   password: <%= ENV['NOMSTER_DATABASE_PASSWORD'] %>
+
   username: postgres
   password: password
   host: localhost
