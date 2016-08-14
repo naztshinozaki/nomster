@@ -9,6 +9,9 @@
 	<small><%= place.user.email %></small>
 	<% end %>
 
+<%= link_to"Edit", edit_place_path(place.id) %>
+<%= link_to"Delete", place_path(place.id), method: :delete %>
+
 	</div>
 
 
