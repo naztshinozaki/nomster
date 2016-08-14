@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+
+ .boo_box {
+	 	-webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
+	  -moz-box-shadow:1px 1px 2px 0 #d0d0d0;
+	  box-shadow:1px 1px 2px 0 #d0d0d0;
+	  background: #fff;
+	  border:1px solid #ccc;
+	  border-color:#e4e4e4 #bebebd #bebebd #e4e4e4;
+	  margin-bottom: 15px
+}
+
+body {
+	background: url(/assets/new_year_background.png);
+}
+
+.navbar navbar-inverse{
+	background: url(/assets/dark_exa.png);
+	border-radius: 0;
+}
