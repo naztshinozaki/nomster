@@ -2,15 +2,15 @@
 
 <div class="boo_box col-xs-10 col-xs-offset-1">
 	<h1><%= place.name %></h1>	
-	<i><%=	place.address %></i><
+	<i><%= place.address %></i>
 	<p><%= place.description %></p>
 
 	<% if place.user.present? %>
 	<small><%= place.user.email %></small>
 	<% end %>
 
-<%= link_to"Edit", edit_place_path(place.id) %>
-<%= link_to"Delete", place_path(place.id), method: :delete %>
+<span class= "pull-right"><%= link_to"Edit", edit_place_path(place.id), class: 'btn btn-primary' %>
+<%= link_to"Delete", place_path(place.id), method: :delete, data: {confirm: "Are you sure you want to delete"}, class: 'btn btn-primary' %></span>
 
 	</div>
 
